@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: rgba(116, 46, 46, 0.984);
+        }
+
+        .centered {
+            font-size: 100px;
+            font-family: 'Kaisei Opti', serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #box {
+            float: right;
+        }
+
+        .image img {
+            width: 100px;
+            animation: coffeeImage 4s linear infinite;
+            float: left;
+        }
+
+        @keyframes coffeeImage {
+
+            0%,
+            100% {
+                transform: scale(.9);
+                border-radius: var(--border-radius-hover);
+            }
+
+            50% {
+                transform: scale(.8);
+                border-radius: var(--border-radius);
+            }
+        }
+
+        h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 40px;
+            margin-left: 900px;
+        }
+
+        #text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 35px;
+        }
+
+       
+
+        .choose {
+            text-align: center;
+        }
+
+        #p {
+            background-color: rgb(143, 53, 53);
+            color: white;
+            font-size: larger;
+            width: 300px;
+            margin-left: 40%;
+            
+        }
+        #row{
+            text-align: center;
+        }
+
+          .column  {
+            display: inline-block;
+            border: 1px black;
+            text-align: center;
+            padding: 40px;
+            margin-right: 20px;
+            box-shadow: 25px 30px 40px ;
+            border-radius: 20px;
+            
+        }
+        .column:hover {
+            background-color:bisque ;
+            color: rgb(237, 134, 134);
+        }
+        #best{
+            font-family: 'Oswald', sans-serif;
+            font-size: 50px;
+            
+        }
+        span h2{
+            font-family:  'Kaushan Script', cursive;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="/resources/coffee-beans-dark-background-top-view-coffee-concept-banner.jpg" alt="Coffee beans"
+            style="width: 100%; height:400px;">
+        <div class="centered">About Us</div>
+    </div>
+    <div>
+        <h3 class="title">ONE OF THE BEST COFFEE HOUSE <br> IN YOUR HOME TOWN</h3>
+        <div>
+            <div class="image">
+                <img src="./resources/male-barista-preparing-coffee-coffee-shop.jpg" alt="coffee"
+                    style="width:700px; height: 450px; margin-right:80px; border-radius: 10px;">
+            </div>
+
+            <div id=" box">
+                <P id="text"> You may have waited a bit longer for your coffee but we can guarantee you received the
+                    freshest
+                    coffee
+                    anywhere. Even though our roasted coffee can be stored for 4 - 6 months in a cool, dry place, we
+                    don't
+                    warehouse
+                    roasted coffee. Even the coffee sold to stores are roasted and put into stores well within a week.
+                    The
+                    coffee
+                    bean we buy, we typically don’t roast immediately, and instead age it for at least a year. Like a
+                    fine
+                    wine
+                    that
+                    gets better after some years "resting" before being consumed, we feel our coffee is softer yet
+                    bigger
+                    because we
+                    age it to reduce acids giving it a smoother taste. As you may have already experienced, you don't
+                    have
+                    to
+                    add
+                    cream and sweetener to drink our coffee – it has a smoother and less acidic taste without cream
+                    because
+                    of
+                    this
+                    aging process.</P>
+            </div>
+
+            <h2 style="text-align: right;">
+                <a href="https://konagrown.com/blogs/news/what-makes-our-coffee-special"> Read More</a>
+            </h2>
+        </div>
+    </div>
+    <div class="choose">
+        <P id="p">WHY CHOOSE US</P>
+        <p id="best">WE ARE PROVIDE BEST SERVICE <br>IN YOUR CITY</P>
+    </div>
+    <div id="row">
+        <div class="column" style="border: 1px solid black ;  width: 350px; height: 200px;" >
+            <span> <img src="/resources/logo coffee.png">
+                <h2  style="margin-right: 50px;"> TESTY COFFEE RECIPE </h2></span>
+            </div>
+        <div class="column" style="border: 1px solid black ; width: 350px; height: 200px;" >
+        <span> <img src="/resources/location logo.png">
+            <h2  style="margin-right: 50px;"> GREAT LOCATION </h2></span>
+        </div>
+        <div class="column" style="border: 1px solid black ;  width: 350px; height: 200px;" >
+            <span><img src="/resources/logo coffee.png">
+            <h2> PROFESSIONAL CHEF</h2></span>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
