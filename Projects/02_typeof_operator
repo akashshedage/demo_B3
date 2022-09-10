@@ -1,0 +1,20 @@
+// typeof Operator
+//Syntax: typeof value or typeof(30)
+//syntax: typeof my_name; or typeof(my_name)
+
+console.log(typeof 30);
+
+var number_check = typeof 30;
+console.log (number_check);
+
+var string_check = typeof "JavaScript";
+console.log (string_check);
+
+ var my_love = "I love JS";
+var my_love_type_check = typeof my_love;
+console.log(my_love_type_check); 
+
+var pin_code = 123456;
+console.log("My pin code is", pin_code);
+
+
