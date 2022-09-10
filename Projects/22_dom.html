@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title> HTML DOM </title>
+</head>
+
+<body>
+    <h3 id="heading"> This is heading 3 </h3>
+    <h4> This is heading 4</h4>
+
+    <!-- 6. Event Handling -->
+     <h3 onclick="fun_clicked(this)"> Hey buddy click Here</h3>
+
+</body>
+
+</html>
+<script>
+    // 1. Selecting an element using getElementById()
+    let h3_heading = document.getElementById("heading").innerHTML;
+    console.log(h3_heading);
+
+     //2. Selecting the same element using querySelector()
+    let h3 = document.querySelector("#heading").innerHTML
+    console.log(h3);
+
+    //3. Creating an element 
+    let h5_node = document.createElement('h5');
+    let text_node = document.createTextNode("This is h5 headings");
+    document.body.appendChild(text_node);
+
+    //4. Changing an HTML content
+    document.querySelector("#heading").innerHTML = "New This is heading 3";
+
+    //5. Changing the style ex. color
+    document.querySelector("#heading").style.color = 'blue';
+
+
+</script>

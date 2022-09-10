@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Web Storage </title>
+    </head>
+    <body>
+        <h3> Session Storage</h3>
+        <h2>
+             --- Stores data for one session that is data is lost when the browser tab is closed
+        </h2>
+        <h2>
+            --- Even with page refresh data survives that is data will not lost or cleared
+        </h2>
+        <script>
+            
+            window.sessionStorage.setItem("Name", "Akash Shedage");
+            window.sessionStorage.setItem("city", "PUNE");
+            window.sessionStorage.setItem("pin_code", "431202");
+            window.sessionStorage.setItem("country", "US"); // update...india to US
+
+            window.sessionStorage.removeItem("pin_code"); // to remove
+            const no_of_items = window.sessionStorage.length;
+            console.log("Number of items is", no_of_items);
+
+        </script>
+    </body>
+</html>
